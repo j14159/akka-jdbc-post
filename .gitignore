@@ -1,7 +1,10 @@
 # Ignore activator stuff
 logs
 project/project
+project/target
 target/
+*~
+.vagrant
 tmp
 .history
 dist
