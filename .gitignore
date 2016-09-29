@@ -1,1 +1,18 @@
-bin/
+# Ignore activator stuff
+logs
+project/project
+target/
+tmp
+.history
+dist
+/.idea
+/*.iml
+/out
+/.idea_modules
+/.classpath
+/.project
+/RUNNING_PID
+/.settings
+/project/*-shim.sbt
+*-shim.sbt
+.DS_Store
