@@ -2,11 +2,11 @@ akka-jdbc-post
 ====
 This is the supporting example project for my [blog post on Akka and JDBC](http://noisycode.com/blog/2014/07/27/akka-and-jdbc-to-services/) that follows the promise + circuit breaker approach.
 
-## Install Docker
+## Install Java, Docker, PostgreSQL, Activator
 
 ```
-brew install postgresql docker docker-compose
-brew cask install docker
+brew install typesafe-activator postgresql docker docker-compose
+brew cask install java docker
 ```
 ## Start Docker.app
 
