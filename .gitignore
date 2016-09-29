@@ -1,5 +1,21 @@
+# Ignore activator stuff
+logs
 project/project
 project/target
-target
+target/
 *~
 .vagrant
+tmp
+.history
+dist
+/.idea
+/*.iml
+/out
+/.idea_modules
+/.classpath
+/.project
+/RUNNING_PID
+/.settings
+/project/*-shim.sbt
+*-shim.sbt
+.DS_Store

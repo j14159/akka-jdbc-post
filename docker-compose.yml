@@ -1,0 +1,16 @@
+postgres-data:
+  image: busybox
+  volumes:
+      - /var/lib/postgresql/data
+  container_name: postgres-datastore
+
+postgresql:
+  image: postgres
+  environment:
+    POSTGRES_USER: akkajdbc
+    POSTGRES_PASSWORD: akkajdbc
+  ports:
+    - "15432:5432"
+  container_name: postgres-db
+  volumes_from:
+      - postgres-data

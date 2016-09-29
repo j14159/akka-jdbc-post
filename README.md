@@ -2,8 +2,34 @@ akka-jdbc-post
 ====
 This is the supporting example project for my [blog post on Akka and JDBC](http://noisycode.com/blog/2014/07/27/akka-and-jdbc-to-services/) that follows the promise + circuit breaker approach.
 
-The [Vagrantfile](http://vagrantup.com) provided will boot the PostgreSQL instance required by the tests, e.g.
+## Install Java, Docker, PostgreSQL, Activator
 
-    $ vagrant up
-    $ sbt test
+```
+brew install typesafe-activator postgresql docker docker-compose
+brew cask install java docker
+```
+## Start Docker.app
+
+Launch Docker.app from /Applications .
+
+## Start PostgreSQL container
+
+```
+docker-compose up -d
+```
+
+## Create schemas
+
+```
+psql -U akkajdbc -h 127.0.0.1 -p 15432 < schema.sql
+```
+
+Password is 'akkajdbc'.
+
+## Run test
+
+```
+activator test
+```
+
 
