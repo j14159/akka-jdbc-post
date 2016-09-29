@@ -24,7 +24,7 @@ docker-compose up -d
 psql -U akkajdbc -h 127.0.0.1 -p 15432 < schema.sql
 ```
 
-Passward is 'akkajdbc'.
+Password is 'akkajdbc'.
 
 ## Run test
 
